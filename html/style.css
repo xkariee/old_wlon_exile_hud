@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box;
+	overflow: hidden !important;
+}
+
+::selection {
+	background: transparent;
+}
+
+#output {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+  }
+
+.hud {
+	opacity: 0.8;
+	transition: all 0.5s ease-out !important;
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.7));
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	right: 0.7%;
+	transform: translate(-0.7%, -10px);
+}
+.gear {
+	font-family: 'Outfit', sans-serif;
+	font-weight: 400;
+	color: white;
+}
+
+.container {
+	/* margin-left: 30px; */
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+ul,
+li{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+ul {
+	background: #000000D0;
+	height: 40px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.suwak-container{
+	display: none;
+	border-radius: 15px;
+	padding: 10px 20px;
+	position: absolute;
+	left: 50%;
+	top: 2%;
+	/* transform: translate(-50%, -2%); */
+	background-color: #000000D0;
+	width: 130px;
+	height: 20px;
+}
+
+.suwak-container i{
+	font-size: 0.9rem;
+	padding: 2px 5px;
+	border-radius: 100%;
+	background-color: red;
+	color: white;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	z-index: 5;
+}
+
+.aaaaaaa{width: 100vh;height: 90px;}
+.aaaa{position: absolute;right: 0;bottom: 0px;width: fit-content;height: 40px;}
+
+.hud2{
+	position: absolute;
+	right: 0;
+	bottom: 23px;
+	padding: 0;
+	transform: translate(-0%, -23px);
+	list-style: none;
+	background: #000000D0;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* opacity: 0.9; */
+	transition: all 0.5s ease-out !important;
+	/* filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.7)); */
+	width: fit-content;
+	height: 40px;
+}
+
+li {
+	margin: 1px;
+	border-radius: 20px;
+	height: 64px;
+	width: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s ease-out !important;
+	/*background: rgba(244, 244, 244, 0.166);*/
+	float: left;
+}
+
+.center {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li svg {
+	transition: all 0.5s ease-out !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+}
+
+.dashee{
+	width: 2px;
+	height: 35px;
+	background-color: black;
+	margin: 0 15px 0 15px;
+}
+
+.time, .dashee{
+	display: inline-block
+}
+
+
+label {
+	width: 100%;
+	display: inline;
+	float: right;
+	text-transform: uppercase;
+	color: white;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+}
+
+.dash {
+	width: 2px;
+	height: 70%;
+	background-color: rgba(255, 255, 255, 0.7);
+	opacity: 0.5;
+	margin: 0 15px 0 15px;
+}
+
+.mic{
+	margin: 0 0 0 -20;
+}
+
+.hud2 p{
+	font-family: 'Outfit', sans-serif;
+	color:white;
+}
+
+
+
+@keyframes Push {
+	0% {
+		opacity: 0.0;
+	}
+
+	100% {
+		opacity: 1.0;
+	}
+}
+
+@keyframes Out {
+	0% {
+		opacity: 1.0;
+	}
+
+	100% {
+		opacity: 0.0;
+	}
+}
+@media only screen and (max-width: 1921px) {
+	li{
+		height: 50px;
+		width: 50px;
+	}
+	li svg{
+		height: 20.8px;
+		width: 20.8px;
+	}
+}
+@media only screen and (max-width: 1281px) {
+	li{
+		height: 64px;
+		width: 64px;
+	}
+	li svg{
+		height: 24px;
+		width: 24px;
+	}
+	.hud{
+		transform: scale(0.7) translateX(70%) translateY(17px);
+	}
+	.hud-collapse{
+		transform: scale(0.7) translateX(70%) translateY(5px);
+	}
+}
+
+
+.time{
+    margin: 0 0 0 5px;
+}
+
+.carr{
+	color: white;
+    font-size: 110%;
+    margin: 0 10px 0 10px;
+}
+
+
+
+.carhud {
+    display: block;
+    margin: auto;
+}
+
+.text{font-family: 'Open Sans', sans-serif; font-size: 90%; color: white; font-weight: bold}
+
+#seatbelt{
+	color: white;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.exile-id{position: absolute;top:15px;right:15px;color: white;font-family: 'Poppins', sans-serif;width: fit-content;height: 100px;}
+
+.exile-id .exile-id-left-side{margin-top: 5px;margin-right: 10px;float: left;}
+
+.exile-id .exile-id-right-side{margin-left: 10px;margin-top: 10px;float: right;font-size: 1.3rem;}
+
+.exile-id .exile-id-left-side .exile-id-discord{float: right}
+
+.exile-id .exile-id-name{float:right;}
+
+.exile-id .exile-id-name, .exile-id, .exile-id-discord{display: block;}
+
+.exile-id-discord{font-size: 0.8rem;color: rgb(150, 150, 150)}
+
+.exile-id-discord{font-size: 0.6rem;color: rgb(150, 150, 150)}
+
